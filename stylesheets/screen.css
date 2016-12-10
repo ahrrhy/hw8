@@ -236,15 +236,81 @@ body {
   border-radius: 6%;
 }
 
+/* line 152, ../sass/screen.scss */
+.contacts {
+  background: url("../images/bg-contacts.png") rgba(44, 54, 75, 0.6) center/cover no-repeat;
+  background-color: #2d374c;
+  background-blend-mode: darken;
+}
+/* line 156, ../sass/screen.scss */
+.contacts .contacts-h {
+  color: #ffffff;
+  font-size: 2em;
+  padding: 10% 0 2%;
+}
+/* line 161, ../sass/screen.scss */
+.contacts .contacts-p {
+  margin-bottom: 5%;
+  color: #999999;
+  font-size: 0.9em;
+}
+/* line 166, ../sass/screen.scss */
+.contacts .contact-form {
+  margin-bottom: 10%;
+}
+/* line 169, ../sass/screen.scss */
+.contacts input {
+  width: 100%;
+  border: 1px solid #999999;
+  font-size: 1em;
+  padding: 3% 0 3% 3%;
+  margin: 0 0 3% 0;
+  background-color: transparent;
+  color: #999999;
+}
+/* line 178, ../sass/screen.scss */
+.contacts .sbmt {
+  border: 1px solid #15a4fa;
+  line-height: 1.5em;
+}
+/* line 182, ../sass/screen.scss */
+.contacts .check-box {
+  color: #f1f2f3;
+}
+/* line 185, ../sass/screen.scss */
+.contacts textarea {
+  width: 100%;
+  border: 1px solid #999999;
+  font-size: 1em;
+  padding: 3% 0 3% 3%;
+  margin: 0 0 3% 0;
+  background-color: transparent;
+  color: #999999;
+}
+/* line 194, ../sass/screen.scss */
+.contacts .submit-btn {
+  float: right;
+}
+/* line 197, ../sass/screen.scss */
+.contacts .chk {
+  float: left;
+  width: 5%;
+  padding: 0% 2%;
+}
+/* line 202, ../sass/screen.scss */
+.contacts .check-box {
+  float: left;
+}
+
 @media screen and (min-device-width: 768px) {
-  /* line 153, ../sass/screen.scss */
+  /* line 207, ../sass/screen.scss */
   .welcome {
     height: 100vh;
     text-align: center;
     color: #ffffff;
     background: url("../images/background.png") center/cover no-repeat;
   }
-  /* line 158, ../sass/screen.scss */
+  /* line 212, ../sass/screen.scss */
   .welcome .welcome-h {
     font-weight: bold;
     font-size: 4em;
@@ -256,38 +322,38 @@ body {
     border-right: none;
     padding: 15% 5% 4% 5%;
   }
-  /* line 169, ../sass/screen.scss */
+  /* line 223, ../sass/screen.scss */
   .welcome .welcome-p {
     margin: 10% 0 9%;
     font-size: 0.9em;
   }
-  /* line 173, ../sass/screen.scss */
+  /* line 227, ../sass/screen.scss */
   .welcome a {
     color: #ffffff;
   }
-  /* line 176, ../sass/screen.scss */
+  /* line 230, ../sass/screen.scss */
   .welcome .btn-text {
     display: inline-block;
     border: 1px solid #15a4fa;
     border-radius: 6%;
     padding: 3%;
   }
-  /* line 182, ../sass/screen.scss */
+  /* line 236, ../sass/screen.scss */
   .welcome .down-arrow {
     margin: 10% 0 2%;
   }
 
-  /* line 186, ../sass/screen.scss */
+  /* line 240, ../sass/screen.scss */
   .about {
     background: #f6f9f9;
   }
-  /* line 188, ../sass/screen.scss */
+  /* line 242, ../sass/screen.scss */
   .about .about-h {
     padding: 15% 0 5%;
     font-size: 1.5em;
     color: #254851;
   }
-  /* line 193, ../sass/screen.scss */
+  /* line 247, ../sass/screen.scss */
   .about .about-p {
     padding-bottom: 15%;
     color: #999999;
@@ -296,14 +362,14 @@ body {
   }
 }
 @media screen and (min-device-width: 992px) {
-  /* line 202, ../sass/screen.scss */
+  /* line 256, ../sass/screen.scss */
   .welcome {
     height: 100vh;
     text-align: center;
     color: #ffffff;
     background: url("../images/background.png") center/cover no-repeat;
   }
-  /* line 207, ../sass/screen.scss */
+  /* line 261, ../sass/screen.scss */
   .welcome .welcome-h {
     font-weight: bold;
     font-size: 4em;
@@ -315,38 +381,38 @@ body {
     border-right: none;
     padding: 15% 5% 2% 5%;
   }
-  /* line 218, ../sass/screen.scss */
+  /* line 272, ../sass/screen.scss */
   .welcome .welcome-p {
     margin: 5% 0 6%;
     font-size: 0.9em;
   }
-  /* line 222, ../sass/screen.scss */
+  /* line 276, ../sass/screen.scss */
   .welcome a {
     color: #ffffff;
   }
-  /* line 225, ../sass/screen.scss */
+  /* line 279, ../sass/screen.scss */
   .welcome .btn-text {
     display: inline-block;
     border: 1px solid #15a4fa;
     border-radius: 6%;
     padding: 3%;
   }
-  /* line 231, ../sass/screen.scss */
+  /* line 285, ../sass/screen.scss */
   .welcome .down-arrow {
     margin: 10% 0 2%;
   }
 
-  /* line 235, ../sass/screen.scss */
+  /* line 289, ../sass/screen.scss */
   .about {
     background: #f6f9f9;
   }
-  /* line 237, ../sass/screen.scss */
+  /* line 291, ../sass/screen.scss */
   .about .about-h {
     padding: 15% 0 5%;
     font-size: 1.5em;
     color: #254851;
   }
-  /* line 242, ../sass/screen.scss */
+  /* line 296, ../sass/screen.scss */
   .about .about-p {
     padding-bottom: 15%;
     color: #999999;
@@ -355,44 +421,44 @@ body {
   }
 }
 @media screen and (min-device-width: 1200px) {
-  /* line 251, ../sass/screen.scss */
+  /* line 305, ../sass/screen.scss */
   .welcome {
     height: 100vh;
     background: url("../images/background.png") center/cover no-repeat;
   }
-  /* line 254, ../sass/screen.scss */
+  /* line 308, ../sass/screen.scss */
   .welcome .welcome-h {
     font-size: 5em;
     padding: 10% 5% 1% 5%;
   }
-  /* line 258, ../sass/screen.scss */
+  /* line 312, ../sass/screen.scss */
   .welcome .welcome-p {
     margin: 2% 0 4%;
     font-size: 0.9em;
   }
-  /* line 262, ../sass/screen.scss */
+  /* line 316, ../sass/screen.scss */
   .welcome .btn-text {
     display: inline-block;
     border: 1px solid #15a4fa;
     border-radius: 6%;
     padding: 1.5%;
   }
-  /* line 268, ../sass/screen.scss */
+  /* line 322, ../sass/screen.scss */
   .welcome .down-arrow {
     margin: 5% 0 2%;
   }
 
-  /* line 272, ../sass/screen.scss */
+  /* line 326, ../sass/screen.scss */
   .about {
     background: #f6f9f9;
   }
-  /* line 274, ../sass/screen.scss */
+  /* line 328, ../sass/screen.scss */
   .about .about-h {
     padding: 8% 0 5%;
     font-size: 2em;
     color: #254851;
   }
-  /* line 279, ../sass/screen.scss */
+  /* line 333, ../sass/screen.scss */
   .about .about-p {
     padding-bottom: 12%;
     color: #999999;

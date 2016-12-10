@@ -146,7 +146,61 @@ body{
 				border-radius: 6%;
 			}
 		}
-		
+
+	}
+}
+.contacts{
+	background:  url("../images/bg-contacts.png") rgba(44, 54, 75, 0.6) center/cover no-repeat;
+	background-color: #2d374c;
+	background-blend-mode: darken;
+	& .contacts-h{
+		color: #ffffff;
+		font-size: 2em;
+		padding: 10% 0 2%;
+	}
+	& .contacts-p{
+		margin-bottom: 5%;
+		color: #999999;
+		font-size: 0.9em;
+	}
+	& .contact-form{
+		margin-bottom: 10%;
+	}
+	& input{
+		width: 100%;
+		border: 1px solid #999999;
+		font-size: 1em;
+		padding: 3% 0 3% 3%;
+		margin: 0 0 3% 0;
+		background-color: transparent;
+		color: #999999;
+	}
+	& .sbmt{
+		@include blue-border;
+		line-height: 1.5em; 
+	}
+	& .check-box{
+		color: #f1f2f3;
+	}
+	& textarea{
+		width: 100%;
+		border: 1px solid #999999;
+		font-size: 1em;
+		padding: 3% 0 3% 3%;
+		margin: 0 0 3% 0;
+		background-color: transparent;
+		color: #999999;
+	}
+	& .submit-btn{
+		float: right;		
+	}
+	& .chk{
+		float: left;
+		width: 5%;
+		padding:0% 2%;
+	}
+	& .check-box{
+		float: left;
 	}
 }
 @media screen and (min-device-width: 768px) {
