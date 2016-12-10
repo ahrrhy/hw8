@@ -191,17 +191,60 @@ body {
 /* line 110, ../sass/screen.scss */
 .portfolio .cell {
   padding: 2%;
+  position: relative;
+}
+/* line 113, ../sass/screen.scss */
+.portfolio .cell:hover .overlay {
+  display: block;
+}
+/* line 117, ../sass/screen.scss */
+.portfolio .overlay {
+  display: none;
+  background: rgba(72, 186, 255, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 125, ../sass/screen.scss */
+.portfolio .overlay .galery-tools {
+  position: inherit;
+  top: 45%;
+  left: 35%;
+}
+/* line 129, ../sass/screen.scss */
+.portfolio .overlay .galery-tools a {
+  display: inline-block;
+  color: #ffffff;
+  padding: 15%;
+  border: 1px solid #ffffff;
+  border-radius: 6%;
+}
+/* line 137, ../sass/screen.scss */
+.portfolio .overlay .galery-tools-link {
+  position: inherit;
+  top: 45%;
+  left: 53%;
+}
+/* line 141, ../sass/screen.scss */
+.portfolio .overlay .galery-tools-link a {
+  display: inline-block;
+  color: #ffffff;
+  padding: 15%;
+  border: 1px solid #ffffff;
+  border-radius: 6%;
 }
 
 @media screen and (min-device-width: 768px) {
-  /* line 116, ../sass/screen.scss */
+  /* line 153, ../sass/screen.scss */
   .welcome {
     height: 100vh;
     text-align: center;
     color: #ffffff;
     background: url("../images/background.png") center/cover no-repeat;
   }
-  /* line 121, ../sass/screen.scss */
+  /* line 158, ../sass/screen.scss */
   .welcome .welcome-h {
     font-weight: bold;
     font-size: 4em;
@@ -213,38 +256,38 @@ body {
     border-right: none;
     padding: 15% 5% 4% 5%;
   }
-  /* line 132, ../sass/screen.scss */
+  /* line 169, ../sass/screen.scss */
   .welcome .welcome-p {
     margin: 10% 0 9%;
     font-size: 0.9em;
   }
-  /* line 136, ../sass/screen.scss */
+  /* line 173, ../sass/screen.scss */
   .welcome a {
     color: #ffffff;
   }
-  /* line 139, ../sass/screen.scss */
+  /* line 176, ../sass/screen.scss */
   .welcome .btn-text {
     display: inline-block;
     border: 1px solid #15a4fa;
     border-radius: 6%;
     padding: 3%;
   }
-  /* line 145, ../sass/screen.scss */
+  /* line 182, ../sass/screen.scss */
   .welcome .down-arrow {
     margin: 10% 0 2%;
   }
 
-  /* line 149, ../sass/screen.scss */
+  /* line 186, ../sass/screen.scss */
   .about {
     background: #f6f9f9;
   }
-  /* line 151, ../sass/screen.scss */
+  /* line 188, ../sass/screen.scss */
   .about .about-h {
     padding: 15% 0 5%;
     font-size: 1.5em;
     color: #254851;
   }
-  /* line 156, ../sass/screen.scss */
+  /* line 193, ../sass/screen.scss */
   .about .about-p {
     padding-bottom: 15%;
     color: #999999;
@@ -253,14 +296,14 @@ body {
   }
 }
 @media screen and (min-device-width: 992px) {
-  /* line 165, ../sass/screen.scss */
+  /* line 202, ../sass/screen.scss */
   .welcome {
     height: 100vh;
     text-align: center;
     color: #ffffff;
     background: url("../images/background.png") center/cover no-repeat;
   }
-  /* line 170, ../sass/screen.scss */
+  /* line 207, ../sass/screen.scss */
   .welcome .welcome-h {
     font-weight: bold;
     font-size: 4em;
@@ -272,71 +315,25 @@ body {
     border-right: none;
     padding: 15% 5% 2% 5%;
   }
-  /* line 181, ../sass/screen.scss */
+  /* line 218, ../sass/screen.scss */
   .welcome .welcome-p {
     margin: 5% 0 6%;
     font-size: 0.9em;
   }
-  /* line 185, ../sass/screen.scss */
+  /* line 222, ../sass/screen.scss */
   .welcome a {
     color: #ffffff;
-  }
-  /* line 188, ../sass/screen.scss */
-  .welcome .btn-text {
-    display: inline-block;
-    border: 1px solid #15a4fa;
-    border-radius: 6%;
-    padding: 3%;
-  }
-  /* line 194, ../sass/screen.scss */
-  .welcome .down-arrow {
-    margin: 10% 0 2%;
-  }
-
-  /* line 198, ../sass/screen.scss */
-  .about {
-    background: #f6f9f9;
-  }
-  /* line 200, ../sass/screen.scss */
-  .about .about-h {
-    padding: 15% 0 5%;
-    font-size: 1.5em;
-    color: #254851;
-  }
-  /* line 205, ../sass/screen.scss */
-  .about .about-p {
-    padding-bottom: 15%;
-    color: #999999;
-    font-size: 0.9em;
-    padding: 0 5%;
-  }
-}
-@media screen and (min-device-width: 1200px) {
-  /* line 214, ../sass/screen.scss */
-  .welcome {
-    height: 100vh;
-    background: url("../images/background.png") center/cover no-repeat;
-  }
-  /* line 217, ../sass/screen.scss */
-  .welcome .welcome-h {
-    font-size: 5em;
-    padding: 10% 5% 1% 5%;
-  }
-  /* line 221, ../sass/screen.scss */
-  .welcome .welcome-p {
-    margin: 2% 0 4%;
-    font-size: 0.9em;
   }
   /* line 225, ../sass/screen.scss */
   .welcome .btn-text {
     display: inline-block;
     border: 1px solid #15a4fa;
     border-radius: 6%;
-    padding: 1.5%;
+    padding: 3%;
   }
   /* line 231, ../sass/screen.scss */
   .welcome .down-arrow {
-    margin: 5% 0 2%;
+    margin: 10% 0 2%;
   }
 
   /* line 235, ../sass/screen.scss */
@@ -345,11 +342,57 @@ body {
   }
   /* line 237, ../sass/screen.scss */
   .about .about-h {
+    padding: 15% 0 5%;
+    font-size: 1.5em;
+    color: #254851;
+  }
+  /* line 242, ../sass/screen.scss */
+  .about .about-p {
+    padding-bottom: 15%;
+    color: #999999;
+    font-size: 0.9em;
+    padding: 0 5%;
+  }
+}
+@media screen and (min-device-width: 1200px) {
+  /* line 251, ../sass/screen.scss */
+  .welcome {
+    height: 100vh;
+    background: url("../images/background.png") center/cover no-repeat;
+  }
+  /* line 254, ../sass/screen.scss */
+  .welcome .welcome-h {
+    font-size: 5em;
+    padding: 10% 5% 1% 5%;
+  }
+  /* line 258, ../sass/screen.scss */
+  .welcome .welcome-p {
+    margin: 2% 0 4%;
+    font-size: 0.9em;
+  }
+  /* line 262, ../sass/screen.scss */
+  .welcome .btn-text {
+    display: inline-block;
+    border: 1px solid #15a4fa;
+    border-radius: 6%;
+    padding: 1.5%;
+  }
+  /* line 268, ../sass/screen.scss */
+  .welcome .down-arrow {
+    margin: 5% 0 2%;
+  }
+
+  /* line 272, ../sass/screen.scss */
+  .about {
+    background: #f6f9f9;
+  }
+  /* line 274, ../sass/screen.scss */
+  .about .about-h {
     padding: 8% 0 5%;
     font-size: 2em;
     color: #254851;
   }
-  /* line 242, ../sass/screen.scss */
+  /* line 279, ../sass/screen.scss */
   .about .about-p {
     padding-bottom: 12%;
     color: #999999;
