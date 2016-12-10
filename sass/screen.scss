@@ -4,3 +4,113 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+
+@mixin blue-border{
+	border: 1px solid #15a4fa;
+}
+body{
+	font-family: "Lato";
+}
+.header h1{
+	text-transform: uppercase;
+	font-size: 1.875em;
+	margin: 3% 1%;
+}
+.welcome{
+	height: 100vh;
+	text-align: center;
+	color: #ffffff;
+
+	background: url("../images/background.png") center/cover no-repeat;
+	& .welcome-h{
+		font-weight: bold;		
+		font-size: 3em;		
+		text-transform: uppercase;
+		display: inline-block;
+		@include blue-border;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		padding: 40% 5% 4% 5%;
+	}
+	& .welcome-p{
+		margin: 10% 0 9%;
+		font-size: 0.9em;
+	}
+	& a{
+		text-decoration: none;
+		color: #ffffff;
+	}
+	& .btn-text{
+		display: inline-block;
+		@include blue-border;
+		border-radius: 6%;
+		padding: 3%;
+		&:hover{
+			background: #15a4fa;
+
+		}
+	}
+	& .down-arrow{
+		margin: 10% 0 2%;
+	}
+}
+@media screen and (min-device-width: 992px) {
+	.welcome{
+	height: 100vh;
+	text-align: center;
+	color: #ffffff;
+
+	background: url("../images/background.png") center/cover no-repeat;
+	& .welcome-h{
+		font-weight: bold;		
+		font-size: 4em;		
+		text-transform: uppercase;
+		display: inline-block;
+		@include blue-border;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		padding: 40% 5% 4% 5%;
+	}
+	& .welcome-p{
+		margin: 10% 0 9%;
+		font-size: 0.9em;
+	}
+	& a{
+		color: #ffffff;
+	}
+	& .btn-text{
+		display: inline-block;
+		@include blue-border;
+		border-radius: 6%;
+		padding: 3%;
+	}
+	& .down-arrow{
+		margin: 10% 0 2%;
+	}
+}
+}
+@media screen and (min-device-width: 1200px) {
+	.welcome{
+		height: 100vh;
+		background: url("../images/background.png") center/cover no-repeat;
+		& .welcome-h{
+			font-size: 5em;
+			padding: 10% 5% 1% 5%;
+		}
+		& .welcome-p{
+			margin: 4% 0 4%;
+			font-size: 0.9em;
+		}
+		& .btn-text{
+			display: inline-block;
+			@include blue-border;
+			border-radius: 6%;
+			padding: 1.5%;
+		}
+		& .down-arrow{
+		margin: 5% 0 2%;
+	}
+	}	
+}
