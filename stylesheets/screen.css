@@ -148,7 +148,7 @@ body {
 }
 /* line 76, ../sass/screen.scss */
 .content .ico-holder {
-  margin: 0 4%;
+  padding: 0 4%;
 }
 /* line 79, ../sass/screen.scss */
 .content .ico-holder p {
@@ -168,15 +168,40 @@ body {
   font-size: 1.1em;
 }
 
+/* line 95, ../sass/screen.scss */
+.portfolio {
+  background: #f6f9f9;
+}
+/* line 97, ../sass/screen.scss */
+.portfolio .portfolio-h {
+  font-size: 1.5em;
+  color: #2d3950;
+  padding: 10% 0 2%;
+}
+/* line 102, ../sass/screen.scss */
+.portfolio .contact-me a {
+  text-decoration: none;
+  color: #909090;
+  font-size: 1em;
+}
+/* line 107, ../sass/screen.scss */
+.portfolio .contact-me {
+  margin-bottom: 10%;
+}
+/* line 110, ../sass/screen.scss */
+.portfolio .cell {
+  padding: 2%;
+}
+
 @media screen and (min-device-width: 768px) {
-  /* line 96, ../sass/screen.scss */
+  /* line 116, ../sass/screen.scss */
   .welcome {
     height: 100vh;
     text-align: center;
     color: #ffffff;
     background: url("../images/background.png") center/cover no-repeat;
   }
-  /* line 101, ../sass/screen.scss */
+  /* line 121, ../sass/screen.scss */
   .welcome .welcome-h {
     font-weight: bold;
     font-size: 4em;
@@ -188,38 +213,38 @@ body {
     border-right: none;
     padding: 15% 5% 4% 5%;
   }
-  /* line 112, ../sass/screen.scss */
+  /* line 132, ../sass/screen.scss */
   .welcome .welcome-p {
     margin: 10% 0 9%;
     font-size: 0.9em;
   }
-  /* line 116, ../sass/screen.scss */
+  /* line 136, ../sass/screen.scss */
   .welcome a {
     color: #ffffff;
   }
-  /* line 119, ../sass/screen.scss */
+  /* line 139, ../sass/screen.scss */
   .welcome .btn-text {
     display: inline-block;
     border: 1px solid #15a4fa;
     border-radius: 6%;
     padding: 3%;
   }
-  /* line 125, ../sass/screen.scss */
+  /* line 145, ../sass/screen.scss */
   .welcome .down-arrow {
     margin: 10% 0 2%;
   }
 
-  /* line 129, ../sass/screen.scss */
+  /* line 149, ../sass/screen.scss */
   .about {
     background: #f6f9f9;
   }
-  /* line 131, ../sass/screen.scss */
+  /* line 151, ../sass/screen.scss */
   .about .about-h {
     padding: 15% 0 5%;
     font-size: 1.5em;
     color: #254851;
   }
-  /* line 136, ../sass/screen.scss */
+  /* line 156, ../sass/screen.scss */
   .about .about-p {
     padding-bottom: 15%;
     color: #999999;
@@ -228,14 +253,14 @@ body {
   }
 }
 @media screen and (min-device-width: 992px) {
-  /* line 145, ../sass/screen.scss */
+  /* line 165, ../sass/screen.scss */
   .welcome {
     height: 100vh;
     text-align: center;
     color: #ffffff;
     background: url("../images/background.png") center/cover no-repeat;
   }
-  /* line 150, ../sass/screen.scss */
+  /* line 170, ../sass/screen.scss */
   .welcome .welcome-h {
     font-weight: bold;
     font-size: 4em;
@@ -247,38 +272,38 @@ body {
     border-right: none;
     padding: 15% 5% 2% 5%;
   }
-  /* line 161, ../sass/screen.scss */
+  /* line 181, ../sass/screen.scss */
   .welcome .welcome-p {
     margin: 5% 0 6%;
     font-size: 0.9em;
   }
-  /* line 165, ../sass/screen.scss */
+  /* line 185, ../sass/screen.scss */
   .welcome a {
     color: #ffffff;
   }
-  /* line 168, ../sass/screen.scss */
+  /* line 188, ../sass/screen.scss */
   .welcome .btn-text {
     display: inline-block;
     border: 1px solid #15a4fa;
     border-radius: 6%;
     padding: 3%;
   }
-  /* line 174, ../sass/screen.scss */
+  /* line 194, ../sass/screen.scss */
   .welcome .down-arrow {
     margin: 10% 0 2%;
   }
 
-  /* line 178, ../sass/screen.scss */
+  /* line 198, ../sass/screen.scss */
   .about {
     background: #f6f9f9;
   }
-  /* line 180, ../sass/screen.scss */
+  /* line 200, ../sass/screen.scss */
   .about .about-h {
     padding: 15% 0 5%;
     font-size: 1.5em;
     color: #254851;
   }
-  /* line 185, ../sass/screen.scss */
+  /* line 205, ../sass/screen.scss */
   .about .about-p {
     padding-bottom: 15%;
     color: #999999;
@@ -287,44 +312,44 @@ body {
   }
 }
 @media screen and (min-device-width: 1200px) {
-  /* line 194, ../sass/screen.scss */
+  /* line 214, ../sass/screen.scss */
   .welcome {
     height: 100vh;
     background: url("../images/background.png") center/cover no-repeat;
   }
-  /* line 197, ../sass/screen.scss */
+  /* line 217, ../sass/screen.scss */
   .welcome .welcome-h {
     font-size: 5em;
     padding: 10% 5% 1% 5%;
   }
-  /* line 201, ../sass/screen.scss */
+  /* line 221, ../sass/screen.scss */
   .welcome .welcome-p {
     margin: 2% 0 4%;
     font-size: 0.9em;
   }
-  /* line 205, ../sass/screen.scss */
+  /* line 225, ../sass/screen.scss */
   .welcome .btn-text {
     display: inline-block;
     border: 1px solid #15a4fa;
     border-radius: 6%;
     padding: 1.5%;
   }
-  /* line 211, ../sass/screen.scss */
+  /* line 231, ../sass/screen.scss */
   .welcome .down-arrow {
     margin: 5% 0 2%;
   }
 
-  /* line 215, ../sass/screen.scss */
+  /* line 235, ../sass/screen.scss */
   .about {
     background: #f6f9f9;
   }
-  /* line 217, ../sass/screen.scss */
+  /* line 237, ../sass/screen.scss */
   .about .about-h {
     padding: 8% 0 5%;
     font-size: 2em;
     color: #254851;
   }
-  /* line 222, ../sass/screen.scss */
+  /* line 242, ../sass/screen.scss */
   .about .about-p {
     padding-bottom: 12%;
     color: #999999;

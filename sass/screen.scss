@@ -74,7 +74,7 @@ body{
 		padding: 5% 0;
 	}
 	& .ico-holder{
-		margin: 0 4%;
+		padding: 0 4%;
 	}
 	& .ico-holder p{
 		color: #999999;
@@ -89,6 +89,26 @@ body{
 		color: #404b60;
 		margin: 5% 0 3%;
 		font-size: 1.1em;
+	}
+
+}
+.portfolio{
+	background: #f6f9f9;
+	& .portfolio-h{
+		font-size: 1.5em;
+		color: #2d3950;
+		padding: 10% 0 2%;
+	}
+	& .contact-me a{
+		text-decoration: none;
+		color: #909090;
+		font-size: 1em;
+	}
+	& .contact-me{
+		margin-bottom: 10%;
+	}
+	& .cell{
+		padding: 2%;
 	}
 
 }
