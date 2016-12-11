@@ -28,7 +28,7 @@ body{
 		text-transform: uppercase;
 		display: inline-block;
 		@include blue-border;
-		border-top: none;
+		border-top: none;/*Можно и одной строкой это сделать*/
 		border-left: none;
 		border-right: none;
 		padding: 18% 5% 2% 5%;
@@ -83,7 +83,7 @@ body{
 	& .ico-holder .fa{
 		color: #ffffff;
 		padding: 5%;
-		background: -webkit-linear-gradient(left, #48baff, #48baff 50%, #5fc3ff 50%, #5fc3ff);
+		background: -webkit-linear-gradient(left, #48baff, #48baff 50%, #5fc3ff 50%, #5fc3ff);/*1. у тебя получились они не одинаккового размера. 2. Посмотри как это выглядит в файрфоксе*/
 	}
 	& .content-h{
 		color: #404b60;
@@ -190,7 +190,7 @@ body{
 		margin: 0 0 3% 0;
 		line-height: 4em;
 		background-color: transparent;
-		color: #999999;
+		color: #999999;/*у тебя многие стиля совпадают с инпутом. Так зачем их 2 раза писать?*/
 	}
 	& .submit-btn{
 		float: right;		
@@ -213,7 +213,7 @@ body{
 	& .copy{
 		display: inline-block;
 		float: left;
-		margin: 5% 0 5% 0;
+		margin: 5% 0 5% 0;/*5% 0 - дадут тотже эффект*/
 		color: #999999;		
 	}
 	& .footer-icon{
@@ -308,7 +308,7 @@ body{
 }
 @media screen and (min-device-width: 992px) {
 	.welcome{
-	height: 100vh;
+	height: 100vh; /*хорошая попытка. но неудачная. Надо было 100 VH минус высота хедера.*/
 	text-align: center;
 	color: #ffffff;
 	background: url("../images/background.png") center/cover no-repeat;
