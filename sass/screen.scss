@@ -97,7 +97,7 @@ body{
 	& .portfolio-h{
 		font-size: 1.5em;
 		color: #2d3950;
-		padding: 10% 0 2%;
+		padding: 5% 0 2%;
 	}
 	& .contact-me a{
 		text-decoration: none;
@@ -105,7 +105,7 @@ body{
 		font-size: 1em;
 	}
 	& .contact-me{
-		margin-bottom: 10%;
+		margin-bottom: 5%;
 	}
 	& .cell{
 		padding: 2%;
@@ -188,6 +188,7 @@ body{
 		font-size: 1em;
 		padding: 3% 0 3% 3%;
 		margin: 0 0 3% 0;
+		line-height: 4em;
 		background-color: transparent;
 		color: #999999;
 	}
@@ -395,21 +396,17 @@ body{
 	& .copy{
 		display: inline-block;
 		float: left;
-		margin: 5% 0 5% 0;
 		color: #999999;		
 	}
 	& .footer-icon{
 		float: right;
-		margin: 5% 0 5% 0;
-		width: 15%;
 		font-size: 1.1em;
-		color: #ffffff;
-		display: inline-block;
-
+		& a{
+			color: #ffffff;
+		}
 		& .fa{
 			border: 1px solid #ffffff;
 			border-radius: 6%;
-
 			padding: 5%;
 			background: #15a4fa;
 		}
