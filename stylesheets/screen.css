@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, c:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,524 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, c:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, c:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, c:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, c:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, c:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, c:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, c:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, c:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
+}
+
+/* line 11, ../sass/screen.scss */
+body {
+  font-family: "Lato";
+}
+
+/* line 14, ../sass/screen.scss */
+.header h1 {
+  text-transform: uppercase;
+  font-size: 1.875em;
+  margin: 3% 1%;
+}
+
+/* line 19, ../sass/screen.scss */
+.welcome {
+  height: 100vh;
+  text-align: center;
+  color: #ffffff;
+  background: url("../images/background.png") center/cover no-repeat;
+}
+/* line 25, ../sass/screen.scss */
+.welcome .welcome-h {
+  font-weight: bold;
+  font-size: 3em;
+  text-transform: uppercase;
+  display: inline-block;
+  border: 1px solid #15a4fa;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 18% 5% 2% 5%;
+}
+/* line 36, ../sass/screen.scss */
+.welcome .welcome-p {
+  margin: 4% 0 5%;
+  font-size: 0.9em;
+}
+/* line 40, ../sass/screen.scss */
+.welcome a {
+  text-decoration: none;
+  color: #ffffff;
+}
+/* line 44, ../sass/screen.scss */
+.welcome .btn-text {
+  display: inline-block;
+  border: 1px solid #15a4fa;
+  border-radius: 6%;
+  padding: 3%;
+}
+/* line 49, ../sass/screen.scss */
+.welcome .btn-text:hover {
+  background: #15a4fa;
+}
+/* line 54, ../sass/screen.scss */
+.welcome .down-arrow {
+  margin: 5% 0 2%;
+}
+
+/* line 58, ../sass/screen.scss */
+.about {
+  background: #f6f9f9;
+}
+/* line 60, ../sass/screen.scss */
+.about .about-h {
+  padding: 10% 0 5%;
+  font-size: 1.5em;
+  color: #254851;
+}
+/* line 65, ../sass/screen.scss */
+.about .about-p {
+  margin-bottom: 10%;
+  color: #999999;
+  font-size: 0.9em;
+  padding: 0 10%;
+}
+
+/* line 73, ../sass/screen.scss */
+.content .holder {
+  padding: 5% 0;
+}
+/* line 76, ../sass/screen.scss */
+.content .ico-holder {
+  padding: 0 4%;
+}
+/* line 79, ../sass/screen.scss */
+.content .ico-holder p {
+  color: #999999;
+  padding-bottom: 5%;
+}
+/* line 83, ../sass/screen.scss */
+.content .ico-holder .fa {
+  color: #ffffff;
+  padding: 5%;
+  background: -webkit-linear-gradient(left, #48baff, #48baff 50%, #5fc3ff 50%, #5fc3ff);
+}
+/* line 88, ../sass/screen.scss */
+.content .content-h {
+  color: #404b60;
+  margin: 5% 0 3%;
+  font-size: 1.1em;
+}
+
+/* line 95, ../sass/screen.scss */
+.portfolio {
+  background: #f6f9f9;
+}
+/* line 97, ../sass/screen.scss */
+.portfolio .portfolio-h {
+  font-size: 1.5em;
+  color: #2d3950;
+  padding: 5% 0 2%;
+}
+/* line 102, ../sass/screen.scss */
+.portfolio .contact-me a {
+  text-decoration: none;
+  color: #909090;
+  font-size: 1em;
+}
+/* line 107, ../sass/screen.scss */
+.portfolio .contact-me {
+  margin-bottom: 5%;
+}
+/* line 110, ../sass/screen.scss */
+.portfolio .cell {
+  padding: 2%;
+  position: relative;
+}
+/* line 113, ../sass/screen.scss */
+.portfolio .cell:hover .overlay {
+  display: block;
+}
+/* line 117, ../sass/screen.scss */
+.portfolio .overlay {
+  display: none;
+  background: rgba(72, 186, 255, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 125, ../sass/screen.scss */
+.portfolio .overlay .galery-tools {
+  position: inherit;
+  top: 45%;
+  left: 35%;
+}
+/* line 129, ../sass/screen.scss */
+.portfolio .overlay .galery-tools a {
+  display: inline-block;
+  color: #ffffff;
+  padding: 15%;
+  border: 1px solid #ffffff;
+  border-radius: 6%;
+}
+/* line 137, ../sass/screen.scss */
+.portfolio .overlay .galery-tools-link {
+  position: inherit;
+  top: 45%;
+  left: 53%;
+}
+/* line 141, ../sass/screen.scss */
+.portfolio .overlay .galery-tools-link a {
+  display: inline-block;
+  color: #ffffff;
+  padding: 15%;
+  border: 1px solid #ffffff;
+  border-radius: 6%;
+}
+
+/* line 152, ../sass/screen.scss */
+.contacts {
+  background: url("../images/bg-contacts.png") rgba(44, 54, 75, 0.6) center/cover no-repeat;
+  background-color: #2d374c;
+  background-blend-mode: darken;
+}
+/* line 156, ../sass/screen.scss */
+.contacts .contacts-h {
+  color: #ffffff;
+  font-size: 2em;
+  padding: 10% 0 2%;
+}
+/* line 161, ../sass/screen.scss */
+.contacts .contacts-p {
+  margin-bottom: 5%;
+  color: #999999;
+  font-size: 0.9em;
+}
+/* line 166, ../sass/screen.scss */
+.contacts .contact-form {
+  margin-bottom: 10%;
+}
+/* line 169, ../sass/screen.scss */
+.contacts input {
+  width: 100%;
+  border: 1px solid #999999;
+  font-size: 1em;
+  padding: 3% 0 3% 3%;
+  margin: 0 0 3% 0;
+  background-color: transparent;
+  color: #999999;
+}
+/* line 178, ../sass/screen.scss */
+.contacts .sbmt {
+  border: 1px solid #15a4fa;
+  line-height: 1.5em;
+}
+/* line 182, ../sass/screen.scss */
+.contacts .check-box {
+  color: #f1f2f3;
+}
+/* line 185, ../sass/screen.scss */
+.contacts textarea {
+  width: 100%;
+  border: 1px solid #999999;
+  font-size: 1em;
+  padding: 3% 0 3% 3%;
+  margin: 0 0 3% 0;
+  line-height: 4em;
+  background-color: transparent;
+  color: #999999;
+}
+/* line 195, ../sass/screen.scss */
+.contacts .submit-btn {
+  float: right;
+}
+/* line 198, ../sass/screen.scss */
+.contacts .chk {
+  float: left;
+  width: 10%;
+}
+/* line 202, ../sass/screen.scss */
+.contacts .lbl {
+  float: left;
+  width: 20%;
+  font-size: 0.8em;
+  line-height: 0.8em;
+}
+/* line 208, ../sass/screen.scss */
+.contacts .check-box {
+  float: left;
+}
+
+/* line 213, ../sass/screen.scss */
+.footer .copy {
+  display: inline-block;
+  float: left;
+  margin: 5% 0 5% 0;
+  color: #999999;
+}
+/* line 219, ../sass/screen.scss */
+.footer .footer-icon {
+  float: right;
+  margin: 5% 0 5% 0;
+  width: 25%;
+  font-size: 1.1em;
+  color: #ffffff;
+  display: inline-block;
+}
+/* line 227, ../sass/screen.scss */
+.footer .footer-icon .fa {
+  border: 1px solid #ffffff;
+  border-radius: 6%;
+  padding: 5%;
+  background: #15a4fa;
+}
+
+@media screen and (min-device-width: 768px) {
+  /* line 237, ../sass/screen.scss */
+  .welcome {
+    height: 100vh;
+    text-align: center;
+    color: #ffffff;
+    background: url("../images/background.png") center/cover no-repeat;
+  }
+  /* line 242, ../sass/screen.scss */
+  .welcome .welcome-h {
+    font-weight: bold;
+    font-size: 4em;
+    text-transform: uppercase;
+    display: inline-block;
+    border: 1px solid #15a4fa;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 15% 5% 4% 5%;
+  }
+  /* line 253, ../sass/screen.scss */
+  .welcome .welcome-p {
+    margin: 10% 0 9%;
+    font-size: 0.9em;
+  }
+  /* line 257, ../sass/screen.scss */
+  .welcome a {
+    color: #ffffff;
+  }
+  /* line 260, ../sass/screen.scss */
+  .welcome .btn-text {
+    display: inline-block;
+    border: 1px solid #15a4fa;
+    border-radius: 6%;
+    padding: 3%;
+  }
+  /* line 266, ../sass/screen.scss */
+  .welcome .down-arrow {
+    margin: 10% 0 2%;
+  }
+
+  /* line 270, ../sass/screen.scss */
+  .about {
+    background: #f6f9f9;
+  }
+  /* line 272, ../sass/screen.scss */
+  .about .about-h {
+    padding: 15% 0 5%;
+    font-size: 1.5em;
+    color: #254851;
+  }
+  /* line 277, ../sass/screen.scss */
+  .about .about-p {
+    padding-bottom: 15%;
+    color: #999999;
+    font-size: 0.9em;
+    padding: 0 5%;
+  }
+
+  /* line 285, ../sass/screen.scss */
+  .footer .copy {
+    display: inline-block;
+    float: left;
+    margin: 5% 0 5% 0;
+    color: #999999;
+  }
+  /* line 291, ../sass/screen.scss */
+  .footer .footer-icon {
+    float: right;
+    margin: 5% 0 5% 0;
+    width: 15%;
+    font-size: 1.1em;
+    color: #ffffff;
+    display: inline-block;
+  }
+  /* line 299, ../sass/screen.scss */
+  .footer .footer-icon .fa {
+    border: 1px solid #ffffff;
+    border-radius: 6%;
+    padding: 5%;
+    background: #15a4fa;
+  }
+}
+@media screen and (min-device-width: 992px) {
+  /* line 310, ../sass/screen.scss */
+  .welcome {
+    height: 100vh;
+    text-align: center;
+    color: #ffffff;
+    background: url("../images/background.png") center/cover no-repeat;
+  }
+  /* line 315, ../sass/screen.scss */
+  .welcome .welcome-h {
+    font-weight: bold;
+    font-size: 4em;
+    text-transform: uppercase;
+    display: inline-block;
+    border: 1px solid #15a4fa;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 15% 5% 2% 5%;
+  }
+  /* line 326, ../sass/screen.scss */
+  .welcome .welcome-p {
+    margin: 5% 0 6%;
+    font-size: 0.9em;
+  }
+  /* line 330, ../sass/screen.scss */
+  .welcome a {
+    color: #ffffff;
+  }
+  /* line 333, ../sass/screen.scss */
+  .welcome .btn-text {
+    display: inline-block;
+    border: 1px solid #15a4fa;
+    border-radius: 6%;
+    padding: 3%;
+  }
+  /* line 339, ../sass/screen.scss */
+  .welcome .down-arrow {
+    margin: 10% 0 2%;
+  }
+
+  /* line 343, ../sass/screen.scss */
+  .about {
+    background: #f6f9f9;
+  }
+  /* line 345, ../sass/screen.scss */
+  .about .about-h {
+    padding: 15% 0 5%;
+    font-size: 1.5em;
+    color: #254851;
+  }
+  /* line 350, ../sass/screen.scss */
+  .about .about-p {
+    padding-bottom: 15%;
+    color: #999999;
+    font-size: 0.9em;
+    padding: 0 5%;
+  }
+}
+@media screen and (min-device-width: 1200px) {
+  /* line 359, ../sass/screen.scss */
+  .welcome {
+    height: 100vh;
+    background: url("../images/background.png") center/cover no-repeat;
+  }
+  /* line 362, ../sass/screen.scss */
+  .welcome .welcome-h {
+    font-size: 5em;
+    padding: 10% 5% 1% 5%;
+  }
+  /* line 366, ../sass/screen.scss */
+  .welcome .welcome-p {
+    margin: 2% 0 4%;
+    font-size: 0.9em;
+  }
+  /* line 370, ../sass/screen.scss */
+  .welcome .btn-text {
+    display: inline-block;
+    border: 1px solid #15a4fa;
+    border-radius: 6%;
+    padding: 1.5%;
+  }
+  /* line 376, ../sass/screen.scss */
+  .welcome .down-arrow {
+    margin: 5% 0 2%;
+  }
+
+  /* line 380, ../sass/screen.scss */
+  .about {
+    background: #f6f9f9;
+  }
+  /* line 382, ../sass/screen.scss */
+  .about .about-h {
+    padding: 8% 0 5%;
+    font-size: 2em;
+    color: #254851;
+  }
+  /* line 387, ../sass/screen.scss */
+  .about .about-p {
+    padding-bottom: 12%;
+    color: #999999;
+    font-size: 1.1em;
+    line-height: 1.8em;
+    word-spacing: 0.2em;
+  }
+
+  /* line 396, ../sass/screen.scss */
+  .footer .copy {
+    display: inline-block;
+    float: left;
+    color: #999999;
+  }
+  /* line 401, ../sass/screen.scss */
+  .footer .footer-icon {
+    float: right;
+    font-size: 1.1em;
+  }
+  /* line 404, ../sass/screen.scss */
+  .footer .footer-icon a {
+    color: #ffffff;
+  }
+  /* line 407, ../sass/screen.scss */
+  .footer .footer-icon .fa {
+    border: 1px solid #ffffff;
+    border-radius: 6%;
+    padding: 5%;
+    background: #15a4fa;
+  }
 }
